@@ -954,7 +954,7 @@ Join Group : https://chat.whatsapp.com/LeVT7RBq6WU1s92NIwdhfd`
                     var inicaption = `Username account : ${ini_url2.data.result.username}\n\nCaption : ${ini_url2.data.result.caption}\n\nShortcode : ${ini_url2.data.result.shortcode}\n\nDate : ${ini_url2.data.result.date}`
                     megayaa.sendMessage(from, ini_buffer, ini_type, {quoted: lin, caption: `${inicaption}`})
                 break
-	    colong':
+	    case 'colong':
 		if (!isQuotedSticker) return reply(`Reply sticker dengan caption *${prefix}colong*`)
 		const encmediia = JSON.parse(JSON.stringify(lin).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 	        const meidia = await megayaa.downloadAndSaveMediaMessage(encmediia, `./sticker/${sender}`)
