@@ -728,9 +728,6 @@ Join Group : https://chat.whatsapp.com/LeVT7RBq6WU1s92NIwdhfd`
                 reply(`Anime ${q} tidak dapat ditemukan`)
                 }
                 break
-            case 'pinterest':
-                megayaa.sendMessage(from, {url: `http://sanz-api.herokuapp.com/api/search/pinterest?q=${args.join(" ")}&apikey=hayuk`, image, {thumbnail: Buffer.alloc(0)})
-                break
             case 'noprefix':
                 prefix = ''
                 reply('succes')
